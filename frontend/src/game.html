@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="game.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="png" href="./src/png/png/world_tree-removebg-preview.png">    
+    <title>หน้าเลือกเกมส์ - WorldTree</title>
+</head>
+<body>
+        <header class="header">
+    <a href="index.html" class="logo">
+        <img src="src/png/png/world_tree-removebg-preview.png" alt="">
+        <h1 style="color: black;">World Tree</h1>
+    </a>
+    <nav class="navbar">
+        <a href="game.html">เกมส์</a>
+        <a href="https://worldtree-b252d.web.app/game.html">เกมส์</a>
+        <a href="/content">เนื้อหา</a>
+        <a href="/creator">จัดทำโดย</a>
+        <a href="/blogs">แหล่งความรู้</a>
+    </nav>
+    <div class="icon">
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+    </header>
+    
+    <section>
+        <div style="height: 20vh;"></div>
+        <div class="menu-content">
+            <div class="menu-slide">
+                <input onchange="searchsoething(this)" type="search" class = "sidebar-search" placeholder="Search something...">
+                <a onclick="searchproduct('all')" class="sidebar-item">
+                    ทั้งหมด
+                </a>
+                <a onclick="searchproduct('Math')" class="sidebar-item">
+                    คณิตศาสตร์
+                </a>
+                <a onclick="searchproduct('typewriter')" class="sidebar-item">
+                    พิมพ์ดีด
+                </a>
+                <a onclick="searchproduct('Fun')" class="sidebar-item">
+                    สนุกสนาม
+                </a>
+                <a onclick="searchproduct('Android')" class="sidebar-item">
+                    สำหรับมือถือ
+                </a>
+                </div>
+                <div id="productlist" class="productlist">
+                     <div class="menu-box">
+                        <div class="menu-item" onclick="location.href='WordShooter.html'">
+                            <img class="menu-img" src="src/png/png/menu-box1.png" alt="">
+                            <h1>WordShooterGame</h1>
+                             <p style="font-size: .9vw;">HTML5</p>
+                         </div>
+                     </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="game.js"></script>
+</body>
+<div class="loader" style=".loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg);
+    transition: opacity 0.75s, visibility 0.75s;
+}
+.loader-hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after{
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: var(--main-color);
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+@keyframes loading{
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}"><script>window.addEventListener("load", () =>{
+    const loader = document.querySelector(".loader");
+
+    loader.classList.add("loader-hidden");
+
+    loader.addEventListener("transitionend", () => {
+        document.body.removeChild("loader");
+    })
+})</script></div>
+</html>

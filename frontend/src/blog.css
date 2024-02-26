@@ -1,0 +1,16 @@
+.text-muted{
+    position: absolute;
+     right: 16px;
+    font-size: 1.4rem;
+}
+.Single-header{
+    font-size: 5rem;
+    border-bottom: 2px;
+}
+p{
+    font-size: 1.8rem;
+}
+.Single .Single-Content{
+    margin-left: 5%;
+    margin-right: 5%;
+}

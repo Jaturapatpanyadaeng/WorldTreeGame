@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;1,200&display=swap');
+
+.Content{
+    font-family: 'Sarabun', sans-serif;
+    color: black;
+    margin-top:25rem;
+    font-weight: 200;
+}
+.Content-center{
+    font-size: 18px;
+}
+span{
+    font-weight: 700;
+}
+.Content-center .para-content{
+    margin: 0;
+}
+.Content-center .para-content .para{
+    display: block;
+    margin: 0;
+    margin-left: 4rem;
+    margin-bottom: 0;
+}
+.para{
+    margin-left: 4rem;
+    font-weight: 100;
+}
+.paras{
+    margin: 4rem;
+}

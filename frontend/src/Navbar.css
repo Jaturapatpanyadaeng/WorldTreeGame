@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,900;1,300;1,400&family=KoHo:wght@500&family=Noto+Sans+Thai:wght@500&family=Pridi:wght@400;500&family=Young+Serif&display=swap');
+
+:root{
+    --main-color:#627444;
+    --black:#13131a;
+    --bg:#FFFBED;
+    --border:.1rem solid #627444;
+}
+*{
+    font-family: 'Kanit', sans-serif;
+    font-family: 'KoHo', sans-serif;
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-family: 'Pridi', serif;
+    font-family: 'Young Serif', serif;
+    cursor: default;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    transform: .2s linear
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+a{
+    cursor: pointer;
+}
+.dowload{
+    margin-top: 50px;
+    text-decoration: underline;
+    color: #fff;
+    font-size: 45px;
+    transition: .2s;
+}
+.dowload:hover{
+    color: var(--main-color);
+}
+#menu-btn{
+    display: no;
+}
+html::-webkit-scrollbar{
+    width: 2rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body{
+    background: var(--bg);
+}
+
+section{
+    padding: 2rem 7%;
+}
+
+.heading{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color:var(--main-color);
+    text-transform: uppercase;
+    
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+.header{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+}
+.logo{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Text-navbar{
+    cursor: pointer;
+    font-weight: 600;
+    color: black;
+}
+.header .logo img{
+    height: 7rem;
+    margin-right: 2rem;
+}
+
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #000000;
+}
+
+.header .navbar a:hover{
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+.header .icon{
+    right: 200%;
+}
+#menu-btn{
+    display: none;
+}
+.header .icon div{
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+.header .icon div:hover{
+    color:var(--main-color)
+}
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #000000;
+    transition: .5s;
+    text-decoration: none;
+}

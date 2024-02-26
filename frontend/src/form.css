@@ -1,0 +1,22 @@
+.container{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+    font-size: 3.5rem;
+    left: 50%;
+}
+.content-group p{
+    cursor: text;
+    font-size: 1.3rem;
+    text-overflow: ellipsis;
+}
+.content-group h1{
+    cursor: text;
+}
+.content-group h2{
+    cursor: text;
+}
+.text-header{
+    cursor: text;
+    margin: 2rem auto 8rem auto;
+}

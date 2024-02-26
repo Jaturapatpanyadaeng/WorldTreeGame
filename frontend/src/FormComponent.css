@@ -1,0 +1,11 @@
+.container{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.content-group{
+    height: 20rem;
+    text-overflow: ellipsis;
+}
+.sticky{
+    background: #fffbed;
+    box-shadow: 0 .1rem 1rem black;
+}
